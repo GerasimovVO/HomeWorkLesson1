@@ -20,8 +20,8 @@ public class Main {
     }
 
     public static long equation(byte a, short b, int c, long d) {
-        long x = (a * (b + (c / d)));
-        return x;
+        return (a * (b + (c / d)));
+
     }
 
     public static boolean compare(int a, int b) {
@@ -34,9 +34,9 @@ public class Main {
 
     public static void comparison(int a) {
         if (a >= 0) {
-            System.out.println("Число положительное");
+            System.out.println("Число положительное!");
         } else {
-            System.out.println("Число отрицательное");
+            System.out.println("Число отрицательное!");
         }
     }
 
