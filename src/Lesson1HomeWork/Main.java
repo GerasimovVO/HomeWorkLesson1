@@ -1,4 +1,4 @@
-package ru.geekbrains.lessons1;
+package Lesson1HomeWork;
 
 public class Main {
     public static void main(String[] args) {
