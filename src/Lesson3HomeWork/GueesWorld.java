@@ -3,7 +3,7 @@ package Lesson3HomeWork;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import java.util.Arrays;
 
 
 public class GueesWorld {
@@ -16,11 +16,11 @@ public class GueesWorld {
         int randomWord = (int) (Math.random() * words.length + 1) -1 ;
         System.out.println("Игра угадай слово");
 
+
         String hiddenWord = words[randomWord];
-        String curtain = "###############";
-        char [] hiddenWordArray = hiddenWord.toCharArray();
-        char [] curtainArray = curtain.toCharArray();
-//        System.out.println(Arrays.toString(hiddenWordArray)); // выводит загаданное слово для
+
+
+
             while (true){
 
                 System.out.println("Введите загаданное слово");
@@ -30,10 +30,15 @@ public class GueesWorld {
                     System.out.println("Поздравляю Вы угадали слово");
                     break;
                 }
+                String curtain = "###############";
+                char [] curtainArray = curtain.toCharArray();
+                char [] hiddenWordArray = hiddenWord.toCharArray();
                 char [] answerArray = answer.toCharArray();
+                System.out.println(Arrays.toString(hiddenWordArray)); // выводит загаданное слово для
                 for (int i = 0; i < answerArray.length && i < hiddenWordArray.length; i++) {
                     if (hiddenWordArray[i] == answerArray[i]){
                         curtainArray[i] = answerArray[i];
+
                     }
                 }
                 System.out.println("Вы не угадали слово целиком");
